@@ -24,10 +24,6 @@ function Navigation() {
       "name": "Home",
       "url": "/"
     },
-    {
-      "name": "Patch",
-      "url": "/patch"
-    }
   ]
   
   console.log({ isMobile})
@@ -63,7 +59,7 @@ function Navigation() {
                     <StyledLink key={link.url} to={link.url}>
                       {link.name}
                     </StyledLink>
-                  )) }            
+                  )) }
                 </Box>
               : 
                 <DrawerComponent open={openDrawer} links={links} onClose={() => setOpenDrawer(false)} />
@@ -76,4 +72,3 @@ function Navigation() {
   }
 
   export default Navigation;
-  

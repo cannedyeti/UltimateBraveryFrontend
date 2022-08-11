@@ -1,12 +1,13 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import { API } from 'aws-amplify';
 import { listPatches } from '../graphql/queries';
 import { createPatch } from '../graphql/mutations';
+import { Context } from '../context/ContextProvider';
 
 const LEAGUE_VERSION_API = 'https://ddragon.leagueoflegends.com/api/versions.json';
 
 function Patch() {
-    const [patch, setPatch] = useState("");
+    const { patch, setPatch } = useContext(Context);
     
     useEffect(() => {
         fetchPatch();
@@ -18,13 +19,12 @@ function Patch() {
         let newestPatch = await getNewestPatchNumber()
         if(!patches[0] || patches[0].patchNumber !== newestPatch) {
             updatePatch(newestPatch);
-        }  
+        } 
         setPatch(newestPatch)
     }
 
     async function updatePatch(patch) {
-        const apiData = await API.graphql({ query: createPatch, variables: { input: { patchNumber: patch } } });
-        console.log({apiData})
+        await API.graphql({ query: createPatch, variables: { input: { patchNumber: patch } } });
     }
     
     async function getNewestPatchNumber() {
@@ -36,10 +36,7 @@ function Patch() {
 
     return (
         <>
-            <h1>Patch</h1>
-            <div>
-                {patch}
-            </div>
+            Current patch: {patch}
         </>
     );
 }

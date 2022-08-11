@@ -5,7 +5,7 @@ import {
 import { Routes, Route, Link } from "react-router-dom";
 import Navigation from "./components/nav/Navigation";
 import { Home } from "./pages";
-import Patch from './components/patch';
+import Footer from './components/Footer';
 import { Box } from '@mui/material';
 
 function App({ signOut }) {
@@ -19,9 +19,9 @@ function App({ signOut }) {
       }}>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/patch" element={<Patch />} />
         </Routes>
       </Box>
+      <Footer />
     </div>
   );
 }
