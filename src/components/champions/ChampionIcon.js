@@ -9,7 +9,7 @@ function ChampionIcon(props) {
             variant="square"
             sx={{
                 width: "100%",
-                height: "100%"
+                height: "100%",
             }} 
             src={imgUrl} alt={props.champion.name} 
         />
