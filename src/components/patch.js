@@ -39,6 +39,6 @@ function Patch() {
             Current patch: {patch}
         </>
     );
-}
+} 
 
 export default Patch;
