@@ -10,6 +10,11 @@
       "StackName": "amplify-ultimatebravery-staging-154809",
       "StackId": "arn:aws:cloudformation:us-west-2:110962303064:stack/amplify-ultimatebravery-staging-154809/0022b0b0-198d-11ed-96c5-02790a729e4f",
       "AmplifyAppId": "d2unzkjgvd5x8t"
+    },
+    "categories": {
+      "auth": {
+        "ultimatebravery24997f63": {}
+      }
     }
   }
 }
