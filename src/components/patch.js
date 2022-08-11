@@ -14,10 +14,9 @@ function Patch() {
 
     async function fetchPatch() {
         const { data } = await API.graphql({ query: listPatches });
-        console.log({data})
         let patches = data.listPatches.items;
         let newestPatch = await getNewestPatchNumber()
-        if(patches[0].patchNumber !== newestPatch) {
+        if(!patches[0] || patches[0].patchNumber !== newestPatch) {
             updatePatch(newestPatch);
         }  
         setPatch(newestPatch)

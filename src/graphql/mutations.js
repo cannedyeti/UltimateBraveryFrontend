@@ -11,9 +11,6 @@ export const createPatch = /* GraphQL */ `
       patchNumber
       createdAt
       updatedAt
-      _version
-      _deleted
-      _lastChangedAt
     }
   }
 `;
@@ -27,9 +24,6 @@ export const updatePatch = /* GraphQL */ `
       patchNumber
       createdAt
       updatedAt
-      _version
-      _deleted
-      _lastChangedAt
     }
   }
 `;
@@ -43,9 +37,6 @@ export const deletePatch = /* GraphQL */ `
       patchNumber
       createdAt
       updatedAt
-      _version
-      _deleted
-      _lastChangedAt
     }
   }
 `;

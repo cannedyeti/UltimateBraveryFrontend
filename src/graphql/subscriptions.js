@@ -8,9 +8,6 @@ export const onCreatePatch = /* GraphQL */ `
       patchNumber
       createdAt
       updatedAt
-      _version
-      _deleted
-      _lastChangedAt
     }
   }
 `;
@@ -21,9 +18,6 @@ export const onUpdatePatch = /* GraphQL */ `
       patchNumber
       createdAt
       updatedAt
-      _version
-      _deleted
-      _lastChangedAt
     }
   }
 `;
@@ -34,9 +28,6 @@ export const onDeletePatch = /* GraphQL */ `
       patchNumber
       createdAt
       updatedAt
-      _version
-      _deleted
-      _lastChangedAt
     }
   }
 `;

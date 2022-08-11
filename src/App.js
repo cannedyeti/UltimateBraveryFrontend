@@ -4,7 +4,8 @@ import {
 } from "@aws-amplify/ui-react";
 import { Routes, Route, Link } from "react-router-dom";
 import Navigation from "./components/nav/Navigation";
-import { Patch, Home } from "./pages";
+import { Home } from "./pages";
+import Patch from './components/patch';
 import { Box } from '@mui/material';
 
 function App({ signOut }) {
