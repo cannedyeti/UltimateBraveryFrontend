@@ -1,0 +1,20 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-ultimatebravery-staging-154809-authRole",
+      "UnauthRoleArn": "arn:aws:iam::110962303064:role/amplify-ultimatebravery-staging-154809-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::110962303064:role/amplify-ultimatebravery-staging-154809-authRole",
+      "Region": "us-west-2",
+      "DeploymentBucketName": "amplify-ultimatebravery-staging-154809-deployment",
+      "UnauthRoleName": "amplify-ultimatebravery-staging-154809-unauthRole",
+      "StackName": "amplify-ultimatebravery-staging-154809",
+      "StackId": "arn:aws:cloudformation:us-west-2:110962303064:stack/amplify-ultimatebravery-staging-154809/0022b0b0-198d-11ed-96c5-02790a729e4f",
+      "AmplifyAppId": "d2unzkjgvd5x8t"
+    },
+    "categories": {
+      "auth": {
+        "ultimatebraveryc0ef9a7f": {}
+      }
+    }
+  }
+}
