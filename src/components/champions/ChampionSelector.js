@@ -7,8 +7,8 @@ function ChampionSelector(props) {
     const [champs, setChamps] = useState({});
     const [filteredChamps, setFilteredChamps] = useState({});
 
-    const LEAGUE_CHAMPION_API = `http://ddragon.leagueoflegends.com/cdn/${props.patch}/data/en_US/champion.json`;
-    const CHAMPION_ICON_URL = `http://ddragon.leagueoflegends.com/cdn/${props.patch}/img/champion/`;
+    const LEAGUE_CHAMPION_API = `https://ddragon.leagueoflegends.com/cdn/${props.patch}/data/en_US/champion.json`;
+    const CHAMPION_ICON_URL = `https://ddragon.leagueoflegends.com/cdn/${props.patch}/img/champion/`;
 
     useEffect(() => {
         getChampions();
