@@ -1,21 +1,27 @@
-import "@aws-amplify/ui-react/styles.css";
+import React, { useState } from 'react';
 import {
   withAuthenticator,
-  Button,
-  Heading,
-  Image,
-  View,
-  Card,
 } from "@aws-amplify/ui-react";
+import { Routes, Route, Link } from "react-router-dom";
+import Navigation from "./components/nav/Navigation";
+import { Patch, Home } from "./pages";
+import { Box } from '@mui/material';
 
 function App({ signOut }) {
   return (
-    <View className="App">
-      <Card>
-        <Heading level={1}>We now have Auth!</Heading>
-      </Card>
-      <Button onClick={signOut}>Sign Out</Button>
-    </View>
+    <div className="App">
+      <Navigation />
+      <Box sx={{
+        maxWidth: "1200px",
+        margin: "0 auto",
+        padding: "2rem"
+      }}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/patch" element={<Patch />} />
+        </Routes>
+      </Box>
+    </div>
   );
 }
 
