@@ -1,5 +1,5 @@
 import React from 'react';
-// import Patch from './Patch';
+import Patch from './Patch';
 import { Box } from '@mui/material';
 
 function Footer() {
@@ -10,7 +10,7 @@ function Footer() {
             margin: "0 auto",
             padding: "2rem"
         }}>
-            {/* <Patch /> */}
+            <Patch />
         </Box>
       </Box>
     );
