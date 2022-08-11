@@ -1,4 +1,0 @@
-type Patch @model @auth(rules: [{allow: public}]) {
-  id: ID!
-  patchNumber: String!
-}
