@@ -9,7 +9,7 @@ function Home() {
       <>
         <main>
           <h2>League shit</h2>
-          <p>CI CD league react app</p>
+          <p>Hello Mr Doodert</p>
           {patch ? <ChampionSelector patch={patch} /> : null }
         </main>
       </>
