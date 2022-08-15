@@ -1,8 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Avatar } from '@mui/material'
 
-function ChampionIcon(props) {
-    const imgUrl = props.imgUrl + props.champion.image.full;
+function ChampionIcon({ champArr, imgUrl, champion, onClick }) {
+    const [isSelected, setIsSelected] = useState(champArr.includes(champion));
+    const img = imgUrl + champion.image.full;
+
+    function handleOnClick() {
+      onClick();
+      setIsSelected(!isSelected);
+    }
+
     return (
       <>
         <Avatar 
@@ -10,8 +17,10 @@ function ChampionIcon(props) {
             sx={{
                 width: "100%",
                 height: "100%",
+                filter: champArr.includes(champion) ? "grayscale(0%)" :  "grayscale(100%)"
             }} 
-            src={imgUrl} alt={props.champion.name} 
+            src={img} alt={champion.name} 
+            onClick={() => handleOnClick()}
         />
       </>
     );

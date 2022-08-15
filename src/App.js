@@ -4,7 +4,7 @@ import {
 } from "@aws-amplify/ui-react";
 import { Routes, Route, Link } from "react-router-dom";
 import Navigation from "./components/nav/Navigation";
-import { Home } from "./pages";
+import { About, Home } from "./pages";
 import Footer from './components/Footer';
 import { Box } from '@mui/material';
 
@@ -19,6 +19,7 @@ function App({ signOut }) {
       }}>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
         </Routes>
       </Box>
       <Footer />

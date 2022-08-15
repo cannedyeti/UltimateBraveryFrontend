@@ -4,6 +4,7 @@ import { AppBar, Box, Toolbar, IconButton, useMediaQuery, useTheme } from '@mui/
 import MenuIcon from '@mui/icons-material/Menu';
 import { styled } from '@mui/material/styles';
 import DrawerComponent from './NavDrawer';
+import { Button } from '@aws-amplify/ui-react';
 
 const StyledLink = styled(Link)(({ theme }) => ({
   color: "#c9c9c9",
@@ -23,6 +24,10 @@ function Navigation() {
     {
       "name": "Home",
       "url": "/"
+    },
+    {
+      "name": "About",
+      "url": "/about"
     },
   ]
   
